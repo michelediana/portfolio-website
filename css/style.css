@@ -7,22 +7,29 @@
   =====================*/
 
   body{
-    padding: 0;
-    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
   }
 
   h1{
-    font-family: 'Montserrat', sans-serif;
     color:#000099;
+    font-weight: 500;
+    font-size: 40px;
+  }
+
+  h2{
+    color:#000099;
+    font-weight: 500;
+    font-size: 30px;
   }
 
   p{
     color:#000000;
-    font-size: 1.2em;
   }
 
   /*================
-  CLASS
+  Container & Columns
   ==================*/
   .container{
     margin: 0 auto;
@@ -30,7 +37,7 @@
   }
 
   /*================
-  Links
+  Navigation bar
   ==================*/
   ul{
     list-style-type: none;
@@ -55,25 +62,22 @@
     text-decoration: none;
   }
 
-  a:hover{
-    color: #000000;
-  }
-
   /*===================
-  Colors:
+  Buttons:
   Primary:#000099
   Secondary:#0000E5
   =====================*/
 
-  button{
-    border: none;
+  .button{
+    border-radius: 4px;
     font-family: inherit;
     background-color:#000099;
     color:white;
     font-size: 16px;
+    padding: 5px;
   }
 
-  button:hover{
+  .button:hover{
     background-color: white;
     color:#000099;
   }
