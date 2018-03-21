@@ -75,7 +75,7 @@
   Container & Columns
   =====================*/
 
-  #portfolio,#hero,#about,#contact{
+  #portfolio,#hero,#about,#contact,#intro,#work,#thankyou{
     padding: 50px;
   }
 
