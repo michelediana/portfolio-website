@@ -4,12 +4,15 @@
   Colors:
   Primary:#000099
   Secondary:#0000E5
+  Nav background-color: #DCDCDC
   =====================*/
 
   body{
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 1.5;
+    margin:0;
+    padding: 0;
   }
 
   h1{
@@ -26,15 +29,27 @@
     margin: 0;
   }
 
-  p{
-    color:#000000;
+  h3{
+    color:#000099;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0;
+  }
+
+  a{
+    text-decoration: none;
   }
 
   /*================
   Navigation bar
   ==================*/
 
-  nav ul li{
+  nav {
+    background-color: #DCDCDC;
+    padding: 15px 0;
+  }
+
+  nav a{
     display: block;
     color: #000099;
     text-align: center;
@@ -53,36 +68,29 @@
     float: left;
   }
 
-  a {
-    text-decoration: none;
-  }
-
   nav a:hover{
-    color:grey;
-  }
-
-  nav a:active{
-    color: #0000E5;
+    color:white;
   }
 
   /*===================
   Container & Columns
   =====================*/
 
-  #portfolio{
+  #portfolio,#hero,#about,#contact{
     padding: 0 30px;
+    margin: 70px 0;
   }
 
-  #hero{
-    padding: 0 30px;
+  #portfolio h3{
+    margin-top: 20px;
   }
 
   #about{
-    padding: 0 30px;
+    background-color: lightgrey;
   }
 
   #contact{
-    padding: 0 30px;
+    background-color: darkgrey;
   }
 
   /*===================
@@ -90,8 +98,7 @@
   =====================*/
 
   #portfolio img{
-    width: 500px;
-    height: 375px;;
+    max-width: 50%;
     display: block;
   }
 
