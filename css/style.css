@@ -15,7 +15,6 @@
   }
 
   h1{
-    color:#000099;
     font-weight: 500;
     font-size: 40px;
     margin: 0;
@@ -35,29 +34,19 @@
     margin: 0;
   }
 
-  a{
-    text-decoration: none;
-  }
-
   /*================
   Navigation bar
   ==================*/
 
-  nav {
-    background-color: #DCDCDC;
-    padding: 15px 0;
+  header{
+      background-color: #DCDCDC;
   }
 
-  nav a{
+  nav ul li{
     display: block;
-    color: #000099;
     text-align: center;
     padding: 8px 8px;
     text-decoration: none;
-  }
-
-  nav a:hover{
-    color:white;
   }
 
   nav ul{
@@ -67,28 +56,66 @@
     overflow: hidden;
   }
 
-  nav li {
+  nav li{
     float: left;
+  }
+
+  nav a{
+     color:#000099;
+  }
+
+  nav a:hover{
+    color:white;
+  }
+
+  a{
+    text-decoration: none;
   }
 
   /*===================
   Container & Columns
   =====================*/
 
-  #portfolio,#hero,#about,#contact,#intro,#work,#thankyou{
-    padding: 50px;
+  .column-one{
+    width: 49%;
+    float: left;
+
+  }
+  .column-two{
+    width: 49%;
+    float: left;
+  }
+
+  .wrapper{
+    min-width: 360px;
+    margin: 0 auto;
+  }
+
+  #hero{
+    background-color: #000099;
+    padding: 60px 30px;
+    color: #fff;
+  }
+
+  #portfolio{
+    padding: 60px 30px;
   }
 
   #portfolio h3{
-    margin-top: 20px;
+    font-size: 30px;
+
   }
 
   #about{
-    background-color: lightgrey;
+    background-color:#ccc7c7;
+    padding: 60px 30px;
+    clear: both;
   }
 
   #contact{
-    background-color: darkgrey;
+    background-color: #DCDCDC;
+    padding: 60px 30px;
+    clear: both;
   }
 
   /*===================
@@ -96,15 +123,32 @@
   =====================*/
 
   #portfolio img{
-    display: block;
+    max-width: 95%;
   }
 
+  #about img{
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .row{
+    width: 100%;
+    clear: both;
+  }
+
+  /*===================
+  Buttons:
+  Primary:#000099
+  Secondary:#0000E5
+  =====================*/
+
   .view-project{
-    display: inline-block;
     background-color: #000099;
     color: white;
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
     margin: 10px 0;
-    padding: 5px 10px;
   }
 
   .view-project:hover{
@@ -116,12 +160,6 @@
     width: 100px;
   }
 
-  /*===================
-  Buttons:
-  Primary:#000099
-  Secondary:#0000E5
-  =====================*/
-
   .button{
     border-radius:10px;
     border-style:solid;
@@ -130,11 +168,65 @@
     font-family:inherit;
     color:#000099;
     font-size:16px;
-    margin:12px 0;
     padding: 10px;
   }
 
   .button:hover{
     color:white;
     background-color:#000099;
+  }
+
+  /*===================
+  Media Queries
+  =====================*/
+
+  /*===================
+  Medium Devices
+  =====================*/
+
+  @media (max-width: 991px) {
+
+  }
+
+  /*===================
+  Small Devices
+  =====================*/
+
+  @media (max-width: 767px) {
+
+        #portfolio img{
+          max-width: 100%;
+          display: block;
+          float: none;
+          margin-top: 15px;
+        }
+
+        #portfolio p{
+          display: inline-block;
+          clear: both;
+        }
+
+        #portfolio h3{
+          clear: both;
+        }
+
+        .view-project{
+          float: right;
+        }
+
+        .column-one,.column-two{
+        width: 100%;
+        float: none;
+        }
+
+  }
+
+
+  /*===================
+  Extra Small Devices
+  =====================*/
+
+  @media (max-width: 575px) {
+
+
   }
