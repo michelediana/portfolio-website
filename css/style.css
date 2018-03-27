@@ -17,21 +17,23 @@
   h1{
     font-weight: 500;
     font-size: 40px;
-    margin: 0;
   }
 
   h2{
     color:#000099;
     font-weight: 500;
     font-size: 25px;
-    margin: 0;
+  }
+
+  h2,h2.container{
+    margin-top: 0;
+    margin-bottom: 20px;
   }
 
   h3{
     color:#000099;
     font-weight: 500;
-    font-size: 18px;
-    margin: 0;
+    font-size: 20px;
   }
 
   /*================
@@ -40,6 +42,8 @@
 
   header{
       background-color: #DCDCDC;
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
   }
 
   nav ul li{
@@ -48,6 +52,10 @@
     padding: 8px 8px;
     text-decoration: none;
   }
+
+nav ul li:first-child{
+  padding-left: 0px;
+}
 
   nav ul{
     list-style-type: none;
@@ -72,68 +80,88 @@
     text-decoration: none;
   }
 
+
+    .row{
+      width: 100%;
+      display: inline-block;
+    }
+
+
   /*===================
   Container & Columns
   =====================*/
 
-  .column-one{
-    width: 49%;
-    float: left;
-
-  }
-  .column-two{
-    width: 49%;
-    float: left;
-  }
-
-  .wrapper{
-    min-width: 360px;
+  .container{
+    max-width: 1000px;
     margin: 0 auto;
+  }
+
+
+  .col-2{
+    margin-right: 2%;
+    width: 49%;
+    float: left;
+  }
+
+  .col-3{
+    margin-right: 2%;
+    width: 33%;
+    float: left;
+  }
+
+  .col-2:last-child{
+    margin-right: 0%;
+  }
+
+  .port-work img{
+      max-width: 100%;
+    }
+
+  .port-work-row img{
+    width: 80%;
+  }
+
+  #portfolio .row:first-child{
+    padding-bottom: 25px;
+    border-bottom: 1px solid #f2f2f2;
+  }
+
+  #portfolio .row:last-child{
+    margin-top: 25px;
   }
 
   #hero{
     background-color: #000099;
-    padding: 60px 30px;
     color: #fff;
-  }
-
-  #portfolio{
-    padding: 60px 30px;
-  }
-
-  #portfolio h3{
-    font-size: 30px;
-
   }
 
   #about{
     background-color:#ccc7c7;
-    padding: 60px 30px;
-    clear: both;
   }
 
   #contact{
     background-color: #DCDCDC;
-    padding: 60px 30px;
-    clear: both;
   }
+
+  .page-padding{
+    padding: 60px 30px;
+  }
+
 
   /*===================
   Portfolio Image
   =====================*/
 
-  #portfolio img{
-    max-width: 95%;
-  }
-
   #about img{
-    max-width: 100%;
+    max-width: 50%;
     margin: 0 auto;
   }
+  #about img, #portfolio img{
+    max-width: 100%;
+  }
 
-  .row{
-    width: 100%;
-    clear: both;
+  #work .col-2{
+    margin: 5% 0;
   }
 
   /*===================
@@ -169,6 +197,7 @@
     color:#000099;
     font-size:16px;
     padding: 10px;
+    margin: 2% 0;
   }
 
   .button:hover{
@@ -186,6 +215,13 @@
 
   @media (max-width: 991px) {
 
+        .page-padding{
+          padding: 40px 15px;
+        }
+
+        .view-project{
+          float: right;
+        }
   }
 
   /*===================
@@ -194,33 +230,8 @@
 
   @media (max-width: 767px) {
 
-        #portfolio img{
-          max-width: 100%;
-          display: block;
-          float: none;
-          margin-top: 15px;
-        }
 
-        #portfolio p{
-          display: inline-block;
-          clear: both;
-        }
-
-        #portfolio h3{
-          clear: both;
-        }
-
-        .view-project{
-          float: right;
-        }
-
-        .column-one,.column-two{
-        width: 100%;
-        float: none;
-        }
-
-  }
-
+}
 
   /*===================
   Extra Small Devices
@@ -228,5 +239,10 @@
 
   @media (max-width: 575px) {
 
+    .col-2 {
+      width: 100%;
+      margin-right: 0;
+      float: none;
+    }
 
   }
