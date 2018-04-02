@@ -159,17 +159,41 @@ Primary:#000099
 Secondary:#0000E5
 =====================*/
 .view-project{
-  background-color: #000099;
-  color: white;
-  padding: 15px;
   border-radius: 10px;
+  background-color: #000099;
+  border:none;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  width: 200px;
+  padding: 15px;
   display: inline-block;
   margin: 10px 0;
-  font-weight: 500;
+  transition: all 0.5s;
+}
+.view-project span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
 
-.view-project:hover{
-  opacity: .8;
+.view-project span:after{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.view-project:hover span{
+padding-right: 25px;
+
+}
+.view-project:hover span:after{
+opacity: 1;
+right:0;
 }
 
 .view-project p{
@@ -192,6 +216,21 @@ Secondary:#0000E5
 .button:hover{
   color:white;
   background-color:#000099;
+}
+
+/*===================
+Animation
+=====================*/
+.social{
+  position: relative;
+  animation-name: icon;
+  animation-duration: 4s;
+}
+
+@keyframes icon{
+  0%{left: 1200px;}
+  50%{}
+  100%{ left:0px;}
 }
 
 /*===================
