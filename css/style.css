@@ -105,7 +105,7 @@ Container & Columns
 #about{
   background-color:#ccc7c7;
 }
-#contact #thankyou{
+#contact, #thankyou{
   background-color: #DCDCDC;
 }
 
@@ -158,7 +158,7 @@ Buttons:
 Primary:#000099
 Secondary:#0000E5
 =====================*/
-.view-project{
+.button,.view-project{
   border-radius: 10px;
   background-color: #000099;
   border:none;
@@ -171,14 +171,14 @@ Secondary:#0000E5
   margin: 10px 0;
   transition: all 0.5s;
 }
-.view-project span{
+.button span,.view-project span{
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-.view-project span:after{
+.button span:after,.view-project span:after{
   content: '\00bb';
   position: absolute;
   opacity: 0;
@@ -187,35 +187,18 @@ Secondary:#0000E5
   transition: 0.5s;
 }
 
-.view-project:hover span{
+.button:hover span,.view-project:hover span{
 padding-right: 25px;
 
 }
-.view-project:hover span:after{
+.button:hover span:after,.view-project:hover span:after{
 opacity: 1;
 right:0;
 }
 
-.view-project p{
+.button p,.view-project p{
   display: inline-block;
   width: 100px;
-}
-
-.button{
-  border-radius:10px;
-  border-style:solid;
-  border-color:#000099;
-  display: inline-block;
-  font-family:inherit;
-  color:#000099;
-  font-size:16px;
-  padding: 10px;
-  margin: 2% 0;
-}
-
-.button:hover{
-  color:white;
-  background-color:#000099;
 }
 
 /*===================
